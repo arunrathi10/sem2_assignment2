@@ -1,0 +1,449 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f8f8f8;
+}
+/* Font styling for headings and paragraphs */
+h1, h2, h4, h5{
+    font-family: "Dancing Script", sans-serif; /* Font 1 */
+}
+p {
+    font-family: "Annie Use Your Telescope", sans-serif; /* Font 2 */
+}
+hr{
+    border: 1px solid #aa2aae;
+    width: 80%;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    background-color: #aa2aae;
+}
+/* Logo container styling */
+.logo-container{
+    height: 110px;
+    flex-grow: 1;/* Allow the container to grow */
+}
+/* Logo image styling */
+.logo-container a img {
+    height: 100%;
+    width: auto;
+    margin-left: 2%;
+    aspect-ratio: 3/2;  /* Maintain a 3:2 aspect ratio for the image */
+    object-fit: contain;
+}
+/* Nav menu styling */
+header nav menu{
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox layout for menu items */
+}
+header nav menu li{
+    padding: 0 30px; /* horizontal padding to each menu item */
+}
+header nav menu li a {
+    color: white;
+    text-decoration: none; /* Removes the underline from the links */
+    font-family: "Coming Soon", sans-serif;
+}
+
+/* Mast styling */
+.mast {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/mast.jpg') no-repeat;
+    background-size: cover; /* background image to cover the entire area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+/* less brightness for mast */
+.mast::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+/* Styling for text in the mast */
+.mast_text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    background-color: rgba(229, 223, 234, 0.4); /* Semi-transparent purple background */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    max-width: 80%;
+}
+
+/* Mast heading styling */
+.mast h1 {
+    font-family: "Coming Soon", sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.mast p {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* discount line styling */
+.get_off{
+    text-align: center;
+    color: #7C067FFF;
+    font-size: 30px;
+}
+
+
+/* Candy Products Section */
+.candy_section {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.candy_section h2 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 36px;
+    color: #aa2aae;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.candy_section h2::before,
+.candy_section h2::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #aa2aae;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+/* Candy Products div */
+.candy_section_div {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Products */
+.candy1 {
+    width: 300px;
+    text-align: center;
+}
+
+/* product img */
+.candy1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.candy1 h3 {
+    font-family: "Coming Soon", sans-serif;
+    font-size: 24px;
+    color: #4d2c1c;
+    margin-top: 20px;
+}
+
+.candy1 p {
+    font-family: "Coming Soon", sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Brands Section Styling */
+.brands {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.brands h2 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 36px;
+    color: #aa2aae;
+}
+
+.brands h2::before,
+.brands h2::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #aa2aae;
+    margin: 0 20px;
+}
+
+/* Brands Container Styling */
+.brands_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.brands_div img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
+
+.brands_div img:hover {
+    transform: scale(1.1);
+}
+
+.candy_categories {
+    text-align: center;
+    padding-top: 40px;
+    background-color: #f8f8f8;
+}
+
+.candy_categories h2 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 36px;
+    color: #aa2aae;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.candy_categories h2::before,
+.candy_categories h2::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #aa2aae;
+    margin: 0 20px;
+}
+
+/* Categories div */
+.categories_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Category Item */
+.category_item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.category_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category_item:hover img {
+    transform: scale(1.1);
+}
+
+/* Category Text */
+.category-text {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transition: bottom 0.3s ease;
+    opacity: 0;
+}
+
+.category_item:hover .category-text {
+    bottom: 20px;
+    opacity: 1;
+}
+
+
+/* Machinee Section Styling */
+.machine_section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.machine_div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.machine_div img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.machine_text {
+    max-width: 600px;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.machine_text p{
+    font-family: "Coming Soon", sans-serif;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #7C067FFF;
+    color: #fefefe;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+/* footer mzin div */
+.footer_div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.company-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-form h3 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #be49c1;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #9b1a9b;
+}
+
+
+/* responsive for all major viewports */
+/* for tablet/laptop screen */
+@media screen and (min-width: 1024px) {
+    .mast_text {
+        max-width: 60%;
+        font-size: 1.1em;
+    }
+}
+
+/* for mobile screen */
+@media screen and (max-width: 600px) {
+    .mast_text {
+        max-width: 90%;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .brands_div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* for small screens */
+@media screen and (max-width: 400px) {
+    .mast h1 {
+        font-size: 32px;
+    }
+    .mast p {
+        font-size: 18px;
+    }
+    .contact-form h3 {
+        font-size: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
+
